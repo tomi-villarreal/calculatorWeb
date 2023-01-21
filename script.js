@@ -18,10 +18,13 @@ const buttonAC = document.querySelector("#button-ac");
 const buttonDiv = document.querySelector("#button-div");
 
 let operacion = "";
+
 //Funcion para cambiar el valor de la pantalla
 function printScreen(number) {
     textScreen.innerHTML += number;
 }
+
+//Todos los listener cuandos presionamos click en cada una de las teclas
 
 buttonEqual.addEventListener("click", ()=>{
     let resultado = eval(operacion);
