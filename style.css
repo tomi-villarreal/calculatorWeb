@@ -1,37 +1,59 @@
 
+.color1 {color: #000e1e;}
+.color2 {color: #31354e;}
+.color3 {color: #579f96;}
+.color4 {color: #92b4a1;}
+.color5 {color: #c1cabb;}
+
 .title{
     font-size: 20px;
     padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .calculator-body{
     width: 400px;
     height: auto;
-    background-color: rgb(150, 145, 145);
+    background-color: #c1cabb;
     border: 2px solid black;
-    align-items: center;
     margin: auto;
+    border-radius: 20px;
 }
 
 .calculator-screen{
-    background-color: rgb(119, 255, 198);
-    height: 150px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #31354e;
+    height: 100px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
-    display: flex;
-    align-items: flex-end;
+    letter-spacing: 3px;
+    word-break: break-all;
+    text-align: end;
+}
+
+.calculator-label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    background-color: #579f96;
+    text-align: center;
+
 }
 
 .calculator-buttons{
-
-    margin-top: 30px;
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 20px;
-    background-color: antiquewhite;
-    padding-bottom: 100px;
+    background-color: #579f96;
+    padding-bottom: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .calculator-buttons div{
@@ -47,6 +69,7 @@ button{
     height: 100%;
     width: 100%;
     font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .div-button-9 {
@@ -150,7 +173,14 @@ button{
 }
 
 .operation{
-
     background-color: orange;
+}
+
+.operation:hover{
+    background: orangered;
+}
+
+button:hover{
+    background-color: #92b4a1;
 }
 

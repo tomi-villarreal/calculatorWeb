@@ -26,6 +26,18 @@ function printScreen(number) {
 
 //Todos los listener cuandos presionamos click en cada una de las teclas
 
+const input = document.querySelector('input');
+const log = document.getElementById('log');
+document.addEventListener('keydown', logKey);
+const arrayNumber = ["1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9", "Digit1"];
+
+function logKey(e) {
+    let val = e.code;
+    val = val.toString();
+    val = val.slice(-1);
+    printScreen(val);
+    }
+
 buttonEqual.addEventListener("click", ()=>{
     let resultado = eval(operacion);
     console.log(resultado);
