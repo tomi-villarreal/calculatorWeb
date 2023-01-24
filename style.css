@@ -31,6 +31,7 @@
     letter-spacing: 3px;
     word-break: break-all;
     text-align: end;
+    overflow-y: hidden;
 }
 
 .calculator-label{
@@ -70,6 +71,7 @@ button{
     width: 100%;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
 }
 
 .div-button-9 {
@@ -121,10 +123,6 @@ button{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 5;
-}
-
-#button-0 {
-    width: 100%;
 }
 
 .div-button-plus{

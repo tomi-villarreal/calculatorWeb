@@ -29,13 +29,17 @@ function printScreen(number) {
 const input = document.querySelector('input');
 const log = document.getElementById('log');
 document.addEventListener('keydown', logKey);
-const arrayNumber = ["1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9", "Digit1"];
+const arrayNumber = ["1","2","3","4","5","Digit6","Digit7","Digit8","Digit9", "Digit1"];
 
 function logKey(e) {
     let val = e.code;
     val = val.toString();
     val = val.slice(-1);
-    printScreen(val);
+    for (let valor in arrayNumber) {
+       if(val == valor ){
+        printScreen(val);
+       }
+    }
     }
 
 buttonEqual.addEventListener("click", ()=>{
