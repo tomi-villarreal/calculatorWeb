@@ -32,6 +32,8 @@
     word-break: break-all;
     text-align: end;
     overflow-y: hidden;
+    text-align: end;
+
 }
 
 .calculator-label{
